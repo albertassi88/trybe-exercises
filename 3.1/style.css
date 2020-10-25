@@ -1,0 +1,78 @@
+body {
+    font-family: opensans,helvetica,arial,sans-serif;  /*fonte do texto*/
+    font-size: 16px;  /*tamanho da fonte*/
+    text-align: center;  /*centralizar o site*/    
+}
+
+#cabecalho {
+    background-color: #C4170C;  /*cor do fundo*/ 
+    padding: 10px 10px;  /*espaçamento em cima/baixo*/        
+}
+
+#cabecalho h2{   
+    color: seashell;  /*cor do texto*/   
+    font-size: 40px;    /*tamanho do cabeçalho*/  
+}
+
+ul {
+    position: absolute;  /*position, left e top serve para posicionar a lista no topo*/
+    left: 0px;
+    top: 10px;             
+}
+
+ul a {
+    color: seashell;  /*cor no link*/
+    text-decoration: none;  /*tira o sublinhado do link*/           
+}
+
+
+ul li {
+    list-style-type: none;  /*tirar o símbolo da lista*/  
+    margin: 5px;  /*espaçamento do texto*/
+    text-align: left;  /*alinhar lista a esquerda*/
+    font-weight: bolder;  /*borda na lista*/  
+    width: 100%;  /*largura da caixa*/  
+         
+}
+
+ul li :hover {  /*alterar a cor do link ao passar o mouse*/
+    background-color: rgb(207, 133, 133); /*cor do fundo ao passar o mouse*/
+    color: seashell;  /*cor ao passar o mouse*/    
+}
+
+
+
+#cabecalho a {
+    color: seashell;  /*cor na lista*/   
+}
+
+h2 {
+    color: #333;  /*cor no h2*/  
+    font-size: 2em; /*tamanho da fonte nos títulos*/
+}
+
+img {
+    border-radius: 100%;  /*borda na imagem*/
+}
+
+#footer {
+    background-color: #C4170C;  /*cor do fundo*/  
+    padding: 40px 40px;  /*espaçamento em cima/baixo*/
+}
+
+#footer ul {
+    color: rgb(64, 179, 41);
+    font-size: 25px;
+    text-decoration: none;  /*tira o sublinhado do link*/   
+    position: absolute;  /*position, left e top serve para posicionar a lista no topo*/
+    left: 0px;
+    top: 904px; 
+    width: 100%;
+}
+
+#footer li {
+    display: inline-block;   
+}
+
+
+
