@@ -1,46 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: opensans,helvetica,arial,sans-serif;  /*fonte do texto*/
-    font-size: 16px;  /*tamanho da fonte*/
-    text-align: center;  /*centralizar o site*/    
+    font-size: 17px;  /*tamanho da fonte*/
+    text-align: center;  /*centralizar o site*/     
 }
 
-#cabecalho {
+header #cabecalho {
     background-color: #C4170C;  /*cor do fundo*/ 
-    padding: 10px 10px;  /*espaçamento em cima/baixo*/        
+    padding: 25px 25px;  /*espaçamento em cima/baixo*/        
 }
 
-#cabecalho h2{   
+header #cabecalho h2{   
     color: seashell;  /*cor do texto*/   
     font-size: 40px;    /*tamanho do cabeçalho*/  
 }
 
-ul {
+header ul {
     position: absolute;  /*position, left e top serve para posicionar a lista no topo*/
-    left: 0px;
-    top: 10px;             
+    left: 25px;
+    top: 15px;             
 }
 
-ul a {
+header ul a {
     color: seashell;  /*cor no link*/
     text-decoration: none;  /*tira o sublinhado do link*/           
 }
 
-
-ul li {
+header ul li {
     list-style-type: none;  /*tirar o símbolo da lista*/  
     margin: 5px;  /*espaçamento do texto*/
     text-align: left;  /*alinhar lista a esquerda*/
     font-weight: bolder;  /*borda na lista*/  
-    width: 100%;  /*largura da caixa*/  
-         
+    width: 100%;  /*largura da caixa*/           
 }
 
 ul li :hover {  /*alterar a cor do link ao passar o mouse*/
     background-color: rgb(207, 133, 133); /*cor do fundo ao passar o mouse*/
     color: seashell;  /*cor ao passar o mouse*/    
 }
-
-
 
 #cabecalho a {
     color: seashell;  /*cor na lista*/   
@@ -49,30 +50,36 @@ ul li :hover {  /*alterar a cor do link ao passar o mouse*/
 h2 {
     color: #333;  /*cor no h2*/  
     font-size: 2em; /*tamanho da fonte nos títulos*/
+    margin: 20px; /*margem do texto*/
 }
 
 img {
     border-radius: 100%;  /*borda na imagem*/
+    width: 200px;
 }
 
 #footer {
     background-color: #C4170C;  /*cor do fundo*/  
     padding: 40px 40px;  /*espaçamento em cima/baixo*/
+    
 }
 
-#footer ul {
-    color: rgb(64, 179, 41);
-    font-size: 25px;
+#footer ul {    
+    font-size: 20px; /*tamanho do texto do rodapé*/
     text-decoration: none;  /*tira o sublinhado do link*/   
     position: absolute;  /*position, left e top serve para posicionar a lista no topo*/
     left: 0px;
-    top: 904px; 
-    width: 100%;
+    top: 890px; 
+    width: 100%;  /*largura da caixa*/     
 }
 
 #footer li {
     display: inline-block;   
 }
 
-
-
+#footer a {
+    color: seashell;  /*cor da lista no rodapé*/
+    text-decoration: none;  /*tira o sublinhado do link*/  
+    margin: 20px;  /*espaçamento do texto*/
+}
+ 
