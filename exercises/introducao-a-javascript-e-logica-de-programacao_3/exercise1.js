@@ -2,9 +2,11 @@
 seja n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n. Por exemplo:
 */
 
-for (let linha=0; linha < 5; linha++){
+let n = 5;
+
+for (let linha=0; linha < n; linha++){
     let quadrado = "";
-    for (coluna=0; coluna<5; coluna++){
+    for (coluna=0; coluna < n; coluna++){
         quadrado = quadrado + "*";
     }
     console.log(quadrado);    
