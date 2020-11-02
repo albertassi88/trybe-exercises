@@ -1,6 +1,7 @@
 /*Agora inverta o lado do triângulo. Por exemplo:
 */
 
+
 let n = 5;
 
 for (let linha=0; linha<n; linha++){
