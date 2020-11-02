@@ -1,17 +1,17 @@
-Trybe - Exercícios
+## Trybe - Exercícios
 
-Contém todas as atividades desenvolvidas por mim durante minha tragetória na Trybe rocket
+### Contém todas as atividades desenvolvidas por mim durante minha tragetória na Trybe rocket
 
-"O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais."
+### "O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais."
 
-Fundamentos do Desenvolvimento Web 
+## Fundamentos do Desenvolvimento Web 
 
-Bloco 1: Unix, Bash e Shell Script
-1.1 - Setup
-1.2 - Fundamentos do Desenvolvimento Web
-1.3 - Introdução - Unix & Shell
-1.4 - Unix & Bash - Parte 1
-1.5 - Unix & Bash - Parte 2
+### Bloco 1: Unix, Bash e Shell Script
+#### 1.1 - Setup
+#### 1.2 - Fundamentos do Desenvolvimento Web
+#### 1.3 - Introdução - Unix & Shell
+#### 1.4 - Unix & Bash - Parte 1
+#### 1.5 - Unix & Bash - Parte 2
 
 Bloco 2: Git, GitHub e Internet
 2.1 - Git & GitHub - O que é e para que serve
