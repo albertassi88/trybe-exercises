@@ -57,10 +57,25 @@ for (let num of numbers){
 
 
 /*9-Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.*/
-for (let x=0; x<3; x++){
-    let h3 = document.createElement("h3");
+let h3 = "";
+for (let x=0; x<3; x++){ 
+    h3 = document.createElement("h3"); 
     div1.appendChild(h3);
 }
+
+
+//Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+
+/*1-Adicione a classe title na tag h1 criada;*/
+h1.className = "title";
+
+
+/*2-Adicione a classe description nas 3 tags h3 criadas;*/
+let h3Class = document.querySelectorAll("h3");
+for (let x=0; x<3; x++){ 
+    h3Class[x].className = "description";
+}
+
 
 
 console.log(div1);
