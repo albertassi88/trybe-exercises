@@ -77,5 +77,17 @@ for (let x=0; x<3; x++){
 }
 
 
+/*3-Remova o div criado no passo 5 (aquele que possui a classe left-content). Utilize a 
+função .removeChild();*/
+let divRemove = document.querySelector(".left-content");
+div1.removeChild(divRemove);
 
-console.log(div1);
+
+/*4-Centralize o div criado no passo 6 (aquele que possui a classe right-content). Dica: 
+para centralizar, basta configurar o margin-right: auto do div;*/
+let divCentro = document.querySelector(".right-content");
+divCentro.style.marginRight = "auto";
+
+
+
+console.log();
