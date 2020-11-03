@@ -18,5 +18,15 @@ div2.className = "center-content";
 div1.appendChild(div2);
 
 
+/*4-Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;*/
+let p1 = document.createElement("p");
+p1.innerText = "Dom";
+div2.appendChild(p1);
 
-console.log(body);
+
+/*5-Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;*/
+let div3 = document.createElement("div");
+div3.className = "left-content";
+div1.appendChild(div3);
+
+console.log(div1);
