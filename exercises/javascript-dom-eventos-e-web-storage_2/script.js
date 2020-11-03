@@ -103,4 +103,3 @@ for (let x=0; x<2; x++) {
 
 
 
-console.log(liRemove);
