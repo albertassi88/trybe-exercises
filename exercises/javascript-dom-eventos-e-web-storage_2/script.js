@@ -47,9 +47,10 @@ div3.appendChild(img);
 /*8-Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. 
 Essa lista deve ser filha do div criado no passo 6;*/
 let ul = document.createElement("ul");
+let li = "";
 let numbers = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
 for (let num of numbers){
-    let li = document.createElement("li");
+    li = document.createElement("li");
     li.innerText = num;
     ul.appendChild(li);
     div4.appendChild(ul);
@@ -89,5 +90,17 @@ let divCentro = document.querySelector(".right-content");
 divCentro.style.marginRight = "auto";
 
 
+/*5-Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe 
+center-content) para a cor verde;*/
+let divPai = document.querySelector(".center-content");
+divPai.parentNode.style.backgroundColor = "green";
 
-console.log();
+
+/*6-Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.*/
+for (let x=0; x<2; x++) {
+    ul.removeChild(ul.lastElementChild);
+}
+
+
+
+console.log(liRemove);
