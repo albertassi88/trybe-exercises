@@ -5,6 +5,7 @@ Dica: você vai precisar de fazer um loop que vá de 0 ao número definido; Alé
 fazer uma checagem a cada iteração e armazenar os resultados em algum lugar.
 */
 
+
 let number = 17;
 let counter = 0;
 
