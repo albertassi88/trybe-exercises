@@ -29,4 +29,18 @@ let div3 = document.createElement("div");
 div3.className = "left-content";
 div1.appendChild(div3);
 
+
+/*6-Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;*/
+let div4 = document.createElement("div");
+div4.className = "right-content";
+div1.appendChild(div4);
+
+
+/*7-Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. 
+Esse elemento deve ser filho do div criado no passo 5;*/
+let img = document.createElement("img");
+img.src = "https://picsum.photos/200";
+img.className = "small-image";
+div3.appendChild(img);
+
 console.log(div1);
