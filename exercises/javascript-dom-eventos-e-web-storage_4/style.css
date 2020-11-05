@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    background-color: bisque;
+}
+
+p {
+  max-width: 50%;
+  margin: auto;
+}
