@@ -205,7 +205,6 @@ a este dia a cor da legenda da sua tarefa selecionada.
 Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial 
 rgb(119,119,119).*/
 
-
 let daysColor = document.querySelector("#days");
 let colorTask = document.querySelector(".task");
 function dayTask(){         
@@ -221,3 +220,30 @@ function dayTask(){
 dayTask();
 
 
+/*Bônus-Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um 
+compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no 
+botão "ADICIONAR".
+Se nenhum caractere for inserido no campo input, a função deve retornar um alert com uma mensagem de 
+erro ao clicar em "ADICIONAR".
+Ao pressionar a tecla "enter" o evento também deverá ser disparado.
+Dica - Propriedade: keyCode.*/
+
+let input = document.querySelector("#task-input");
+let btnInput = document.querySelector("#btn-add");
+let ulInput = document.querySelector(".task-list");
+
+function compromise(){
+    btnInput.addEventListener("click", function(){
+        let li = document.createElement("li");
+        let name = input.value;
+        if (input.value != ""){
+            li.innerHTML = name;
+            ulInput.appendChild(li);
+            console.log(li);
+        }else{
+            alert("Erro! Adicione um compromisso.");
+        }
+        input.value = "";
+    });
+}
+compromise();
