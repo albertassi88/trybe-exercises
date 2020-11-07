@@ -44,8 +44,7 @@ function dayCalendar(){
         }else {
             li.className = "day";
         }
-    }    
-    console.log(ul);
+    }        
 }
 dayCalendar();
 
@@ -102,3 +101,27 @@ function friday(){
     divBtContainer.appendChild(btnFriday);
 }
 friday();
+
+
+/*5-Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto 
+exibido nos dias que são Sexta-feira.
+É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à 
+configuração inicial exibindo os dias.*/
+
+let btn = document.querySelector("#btn-friday");
+let dayFriday = document.querySelectorAll(".friday");
+let days = [4, 11, 18, 25];
+
+btn.addEventListener("click", function(){
+
+    for (let index=0; index<dayFriday.length; index++){
+        let name = "Sexta-feira";
+         if (dayFriday[index].innerHTML != name){
+            dayFriday[index].innerHTML = name;
+        }else{
+            dayFriday[index].innerHTML = days[index];
+        }
+    }
+});
+
+
