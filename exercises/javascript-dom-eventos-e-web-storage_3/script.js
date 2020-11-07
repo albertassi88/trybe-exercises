@@ -64,7 +64,6 @@ function holiday(feriados){
     btn.id = "btn-holiday";
     divBt.appendChild(btn);
 }
-
 holiday();
 
 
@@ -72,5 +71,22 @@ holiday();
 dos dias que possuem a classe "holiday".
 É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à 
 configuração inicial com a cor "rgb(238,238,238)".*/
+
+let dayCor = document.querySelector("#btn-holiday");
+let liHoliday = document.querySelectorAll(".holiday");
+
+dayCor.addEventListener("click", function(){
+
+    for (let index=0; index<liHoliday.length; index++){        
+        let color = "green";
+        if (liHoliday[index].style.backgroundColor !== color){
+            liHoliday[index].style.backgroundColor = color;
+        }else {
+            liHoliday[index].style.backgroundColor = "rgb(238,238,238)";
+        }
+    }     
+});
+
+
 
 
