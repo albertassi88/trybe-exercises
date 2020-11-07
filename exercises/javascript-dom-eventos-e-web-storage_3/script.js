@@ -59,11 +59,11 @@ let divBt = document.querySelector(".buttons-container");
 
 function holiday(feriados){
     let btn = document.createElement("button");
-    btn.innerText = "Feriados";
+    btn.innerText = feriados;
     btn.id = "btn-holiday";
     divBt.appendChild(btn);
 }
-holiday();
+holiday("Feriados");
 
 
 /*3 - Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo
@@ -94,13 +94,13 @@ Adicione este botão como filho/filha da tag <div> com classe "buttons-container
 
 let divBtContainer = document.querySelector(".buttons-container");
 
-function friday(){
+function friday(name){
     let btnFriday = document.createElement("button");
-    btnFriday.innerHTML = "Sexta-feira";
+    btnFriday.innerHTML = name;
     btnFriday.id = "btn-friday";
     divBtContainer.appendChild(btnFriday);
 }
-friday();
+friday("Sexta-feira");
 
 
 /*5-Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto 
