@@ -110,18 +110,19 @@ configuração inicial exibindo os dias.*/
 
 let btn = document.querySelector("#btn-friday");
 let dayFriday = document.querySelectorAll(".friday");
-let days = [4, 11, 18, 25];
 
 btn.addEventListener("click", function(){
 
     for (let index=0; index<dayFriday.length; index++){
         let name = "Sexta-feira";
+        let fryday = dayFriday[index];
          if (dayFriday[index].innerHTML != name){
             dayFriday[index].innerHTML = name;
         }else{
-            dayFriday[index].innerHTML = days[index];
+            dayFriday[index].innerHTML = Number(fryday.previousElementSibling.innerHTML) + 1;
         }
     }
 });
+
 
 
