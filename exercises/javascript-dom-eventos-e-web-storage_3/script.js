@@ -31,17 +31,18 @@ function dayCalendar(){
 
     for (let index=0; index<dezDaysList.length; index++){
         let days = dezDaysList[index];
-        let li = document.createElement("li");
-        li.className = "day";
+        let li = document.createElement("li");        
         li.innerHTML = days;
         ul.appendChild(li);
 
-        if (days == 24 || days == 25 || days == 31){
+        if (days == 24 || days == 31){
             li.className = "day holiday";
-        }
-
-        if (days == 4 || days == 11 || days == 18 || days == 25){
+        }else if (days == 4 || days == 11 || days == 18){
+            li.className = "day friday";
+        }else if (days == 25){
             li.className = "day holiday friday";
+        }else {
+            li.className = "day";
         }
     }    
     console.log(ul);
