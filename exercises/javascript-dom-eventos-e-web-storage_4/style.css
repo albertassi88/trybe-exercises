@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-color: bisque;
+}
+
+p {
+  max-width: 50%;
+  margin: auto;
+}
+
+#nameId {
+  text-align: right;
+  position: relative;
+  top: -340px;
+}
