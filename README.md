@@ -1,3 +1,8 @@
+## Exercício sobre JavaScript - Web Storage
+
+![2](https://user-images.githubusercontent.com/63211449/98483472-6d4f2f00-21e7-11eb-8b70-29fbcc984777.png)
+
+
 ## Trybe - Exercícios
 
 ### Contém todas as atividades desenvolvidas por mim durante minha tragetória na Trybe. 
