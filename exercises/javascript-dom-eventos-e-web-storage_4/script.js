@@ -24,13 +24,12 @@ function placeHolder(){
     let txt6 = document.querySelector("#texto5");
     txt1.placeholder = "Qual é o seu nome?";
     txt2.placeholder = "Digite uma cor de fundo";
-    txt3.placeholder = "Digite uma cor do texto";
+    txt3.placeholder = "Digite uma cor para o texto";
     txt4.placeholder = "Digite um tamanho para fonte";
     txt5.placeholder = "Digite um espaçamento entre as linhas do texto;";
     txt6.placeholder = "Digite um tipo de fonte";
 }
 placeHolder();
-
 
 let buttonId1 = document.querySelector("#botao0");
 let inputText1 = document.querySelector("#texto0");
@@ -44,7 +43,6 @@ let buttonId5 = document.querySelector("#botao4");
 let inputText5 = document.querySelector("#texto4");
 let buttonId6 = document.querySelector("#botao5");
 let inputText6 = document.querySelector("#texto5");
-
 
 function btName(){
     buttonId1.addEventListener("click", function(){      
@@ -135,5 +133,19 @@ let h2 = document.createElement("h2");
 h2.id = "nameId"
 h2.innerHTML = (`Bem Vindo(a) ${name}`);
 body.append(h2);
+
+let color = localStorage.getItem("cor");
+let txt = localStorage.getItem("texto");
+let espaco = localStorage.getItem("espaco");
+let tamanho = localStorage.getItem("tamanho");
+let fonte = localStorage.getItem("fonte");
+
+if (name == "Ruben"){
+    body.style.backgroundColor = color;
+    body.style.color = txt;
+    body.style.fontSize = tamanho+"px";
+    body.style.lineHeight = espaco+"px";
+    body.style.fontFamily = fonte;
+}
 
 
