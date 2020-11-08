@@ -7,3 +7,9 @@ p {
   max-width: 50%;
   margin: auto;
 }
+
+#nameId {
+  text-align: right;
+  position: relative;
+  top: -240px;
+}

@@ -17,17 +17,23 @@ let buttonId = document.querySelector("#botao");
 let inputText = document.querySelector("#texto");
 
 
-
-
 function btName(){
-    buttonId.addEventListener("click", function(){        
+    buttonId.addEventListener("click", function(){      
         let result = "";
         if (inputText.value != ""){
-            result = inputText.value;
+            result = inputText.value;          
         }else{
             alert("Erro! Favor digitar um nome.");
         }        
-        inputText.value = "";        
-    });
+        inputText.value = "";    
+        localStorage.setItem("nome", result);     
+    });    
 }
 btName();
+
+let name = localStorage.getItem("nome");        
+let h2 = document.createElement("h2");
+h2.id = "nameId"
+h2.innerHTML = (`Bem Vindo(a) ${name}`);
+body.append(h2);
+
