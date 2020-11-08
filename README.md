@@ -1,8 +1,3 @@
-## Calendário feito em JavaScript, Html e Css.
-
-![calendario](https://user-images.githubusercontent.com/63211449/98470216-ff910c00-21c2-11eb-8973-4913ba0a3cd2.png)
-
-
 ## Trybe - Exercícios
 
 ### Contém todas as atividades desenvolvidas por mim durante minha tragetória na Trybe. 
