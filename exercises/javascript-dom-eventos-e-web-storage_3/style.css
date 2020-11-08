@@ -41,6 +41,8 @@
     width: 49%;
     height: 100px;
     display: inline-block;
+    list-style-type: none;
+    line-height: 25px;
   }
   
   input {

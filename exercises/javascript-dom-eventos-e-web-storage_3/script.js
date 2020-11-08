@@ -231,14 +231,14 @@ Dica - Propriedade: keyCode.*/
 let input = document.querySelector("#task-input");
 let btnInput = document.querySelector("#btn-add");
 let ulInput = document.querySelector(".task-list");
-
+let divInput = document.querySelector(".input-container");
 function compromise(){
     btnInput.addEventListener("click", function(){
-        let li = document.createElement("li");
-        let name = input.value;
+        let li = document.createElement("li");        
+        let texto = input.value;
         if (input.value != ""){
-            li.innerHTML = name;
-            ulInput.appendChild(li);
+            li.innerHTML = texto;
+            divInput.appendChild(li);
             console.log(li);
         }else{
             alert("Erro! Adicione um compromisso.");
