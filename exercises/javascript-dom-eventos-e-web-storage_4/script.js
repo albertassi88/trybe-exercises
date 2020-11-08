@@ -8,20 +8,24 @@ input.placeholder = "Qual é o seu nome?"
 body.appendChild(input);
 
 let button = document.createElement("button");
-button.onclick = "nome";
 button.innerHTML = "Enviar";
 button.id = "botao";
 body.appendChild(button);
 
 
-let botao = document.querySelector("#botao");
-let inputTexto = document.querySelector("#texto");
+let buttonId = document.querySelector("#botao");
+let inputText = document.querySelector("#texto");
 
 
-let oi = input.value;
-
-
-
-
-
-console.log(oi);
+function btName(){
+    buttonId.addEventListener("click", function(){        
+        let result = "";
+        if (inputText.value != ""){
+            result = inputText.value;
+        }else{
+            alert("Erro! Favor digitar um nome.");
+        }        
+        inputText.value = "";        
+    });
+}
+btName();
