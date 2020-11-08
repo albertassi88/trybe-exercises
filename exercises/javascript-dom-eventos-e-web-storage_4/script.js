@@ -17,6 +17,8 @@ let buttonId = document.querySelector("#botao");
 let inputText = document.querySelector("#texto");
 
 
+
+
 function btName(){
     buttonId.addEventListener("click", function(){        
         let result = "";
