@@ -1,3 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    padding: 20px;
+}
+
 #field {
-    padding: 50px;
+    padding: 40px;
+    width: 20%;
+    margin: 0 auto 40px auto;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: ivory;
+}
+
+label {
+    display: inline-block;  
+    padding: 5px 15px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#select {
+    display: inline-block;  
+    padding: 4px 15px;
+    width: 190px;
+    margin-bottom: 10px;
 }

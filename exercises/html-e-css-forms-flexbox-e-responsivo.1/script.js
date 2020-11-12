@@ -45,6 +45,7 @@ labelCidade.appendChild(inputCidade);
 
 let comboBox = document.createElement("select");
 comboBox.name = "estado";
+comboBox.id = "select";
 let estados = ["RJ", "SP", "MG", "ES", "RS", "RN"];
 let nomes = ["Rio de Janeiro", "São Paulo", "Minas Gerais", "Espirito Santo", "Rio Grande do Sul", "Rio Grande do Norte"];
 for (let index=0; index<estados.length; index++){
