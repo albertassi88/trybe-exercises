@@ -55,13 +55,24 @@ for (let index=0; index<estados.length; index++){
     comboBox.appendChild(option);
 }
 
-let inputRadio = document.createElement("input");
-inputRadio.id = "casa"
-inputRadio.value = "casa";
-inputRadio.type = "radio";
-let labelRadio = document.createElement("label");
-labelRadio.innerHTML = "Casa";
-labelRadio.appendChild(inputRadio);
+let inputRadioCasa = document.createElement("input");
+inputRadioCasa.id = "casa"
+inputRadioCasa.value = "casa";
+inputRadioCasa.className = "radio";
+inputRadioCasa.type = "radio";
+let labelRadioCasa = document.createElement("label");
+labelRadioCasa.innerHTML = "Casa";
+labelRadioCasa.appendChild(inputRadioCasa);
+
+let inputRadioApt = document.createElement("input");
+inputRadioApt.id = "apt"
+inputRadioApt.value = "apt";
+inputRadioApt.className = "radio";
+inputRadioApt.type = "radio";
+let labelRadioApt = document.createElement("label");
+labelRadioApt.innerHTML = "Apartamento";
+labelRadioApt.appendChild(inputRadioApt);
+
 
 fieldset.appendChild(labelNome);
 fieldset.appendChild(labelEmail);
@@ -70,7 +81,8 @@ fieldset.appendChild(labelEndereco);
 fieldset.appendChild(labelCidade);
 fieldset.appendChild(legend);
 fieldset.appendChild(comboBox);
-fieldset.appendChild(labelRadio);
+fieldset.appendChild(labelRadioCasa);
+fieldset.appendChild(labelRadioApt);
 body.appendChild(fieldset);
 
 
