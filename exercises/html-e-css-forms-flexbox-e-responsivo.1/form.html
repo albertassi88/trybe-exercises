@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Formulário</h1>
-    <<script src="script.js"></script>    
+    <form action="" method="GET">
+        <h1>Formulário</h1>
+        <div class="cadastro"></div>
+
+        <div class="textArea">
+            <fieldset id="fieldTextArea">
+                <legend>Resumo do currículo</legend>
+                <textarea name="resumo" id="curriculo" cols="45" rows="10" maxlength="1000" required></textarea>
+                <p>Cargo</p>
+                <textarea name="resumo" id="cargo" cols="45" rows="1.5" maxlength="40" required></textarea>
+                <p>Descrição do Cargo</p>
+                <textarea name="resumo" id="desCargo" cols="45" rows="1.5" maxlength="500" required></textarea>
+                <p>Data de início</p>
+                <input name="resumo" type="text" id="data" required minlength="10" maxlength="10">
+                <button type="submit" id="botao">Enviar</button>
+            </fieldset>
+        </div>
+    </form>
+<script src="script.js"></script>    
 </body>
 </html>

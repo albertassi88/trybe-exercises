@@ -8,10 +8,12 @@ para gerar os <option>, Campo obrigatório
 Tipo - Radio Button, Casa, Apartamento, Campo obrigatório*/
 
 let body = document.querySelector("body");
+let form = document.querySelector("form");
 let fieldset = document.createElement("fieldset");
 fieldset.id = "field";
 let legend = document.createElement("legend");
 legend.innerHTML = "Cadastro de Currículo";
+let divCadastro = document.querySelector(".cadastro");
 
 let labelNome = document.createElement("label");
 labelNome.innerHTML = "Nome";
@@ -55,14 +57,19 @@ labelCidade.appendChild(inputCidade);
 let comboBox = document.createElement("select");
 comboBox.name = "estado";
 comboBox.id = "select";
-let estados = ["RJ", "SP", "MG", "ES", "RS", "RN"];
-let nomes = ["Rio de Janeiro", "São Paulo", "Minas Gerais", "Espirito Santo", "Rio Grande do Sul", "Rio Grande do Norte"];
+let estados = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RO", "RS", "RR", "SC", "SE", "SP", "TO"];
 for (let index=0; index<estados.length; index++){
     let option = document.createElement("option");
     option.value = estados[index];
-    option.innerHTML = nomes[index];
+    option.innerHTML = estados[index];
     comboBox.appendChild(option);
 }
+
+let fieldRadio = document.createElement("fieldset");
+fieldRadio.id = "fieldRadio";
+let legendRadio = document.createElement("legend");
+legendRadio.innerText = "Moradia";
+fieldRadio.appendChild(legendRadio);
 
 let inputRadioCasa = document.createElement("input");
 inputRadioCasa.id = "casa"
@@ -82,6 +89,9 @@ let labelRadioApt = document.createElement("label");
 labelRadioApt.innerHTML = "Apartamento";
 labelRadioApt.appendChild(inputRadioApt);
 
+fieldRadio.appendChild(labelRadioCasa);
+fieldRadio.appendChild(labelRadioApt);
+
 fieldset.appendChild(labelNome);
 fieldset.appendChild(labelEmail);
 fieldset.appendChild(labelCpf);
@@ -89,9 +99,9 @@ fieldset.appendChild(labelEndereco);
 fieldset.appendChild(labelCidade);
 fieldset.appendChild(legend);
 fieldset.appendChild(comboBox);
-fieldset.appendChild(labelRadioCasa);
-fieldset.appendChild(labelRadioApt);
-body.appendChild(fieldset);
+fieldset.appendChild(fieldRadio);
+form.appendChild(fieldset);
+divCadastro.appendChild(fieldset);
 
 
 /*Crie outro <fieldset> para dados do seu último emprego, Resumo do currículo - TextArea,
@@ -101,3 +111,25 @@ Data de início - Texto, Verificar o formato da data dd/mm/aaaa.
 O dia deve ser > 0 e <= 31, O mês deve ser > 0 e <= 12, O ano não pode ser negativo.
 Caso alguma das condições for inválida no momento do envio do formulário, 
 exibir mensagem de erro contextualizada, Campo obrigatório*/
+
+let botao = document.querySelector("#botao");
+let fieldTextArea = document.querySelector("#fieldTextArea");
+form.appendChild(fieldTextArea);
+
+function data(){  
+    botao.addEventListener("click", function(event){       
+
+        let data = document.querySelector("#data").value;
+        let arrayData = data.split("/");
+
+        let dia = arrayData[0];
+        let mes = arrayData[1];
+        let ano = arrayData[2];
+
+        if (!(dia > 0 && dia <=31 && mes > 0 && mes <=12 && ano > 0)){
+            alert("Erro! Data inválida");
+        }       
+    });   
+} 
+data();
+
