@@ -131,40 +131,12 @@ form.appendChild(fieldTextArea);
 function botaoEnviar(){  
     botao.addEventListener("click", function(event){       
 
-       event.preventDefault();
+      event.preventDefault();
        
-
+      validation.init("#myForm");
+               
         
-        /*
-        let data = document.querySelector("#data").value;
-        let arrayData = data.split("/");
-        let dia = arrayData[0];
-        let mes = arrayData[1];
-        let ano = arrayData[2];
-
-        if (!(dia > 0 && dia <=31 && mes > 0 && mes <=12 && ano > 0)){
-            alert("Erro! Data inválida");
-        }
-        
-        let inputs = document.querySelectorAll("input[type=text], textarea");        
-        let resultado = "";
-        for (let index=0; index<inputs.length; index++){
-            let inputsArray = inputs[index];            
-
-            if (inputsArray.value == ""){
-                inputsArray.className = "erro";
-                resultado += `Favor preencher o campo ${inputsArray.name}.\n`;               
-            }else {
-                inputsArray.className = "";                
-            }            
-        }        
-
-        if (resultado !== ""){
-            alert(resultado);            
-        }else {            
-            form.reset();
-        }    
-        */    
+         
     });      
 } 
 botaoEnviar();
@@ -175,3 +147,5 @@ function dataPikaday(){
     });
 }
 dataPikaday();
+
+
