@@ -121,7 +121,7 @@ fieldset.appendChild(legend);
 fieldset.appendChild(comboBox);
 fieldset.appendChild(fieldRadio);
 form.appendChild(fieldset);
-divCadastro.appendChild(fieldset);
+//divCadastro.appendChild(fieldset);
 divRadio.appendChild(fieldRadio);
 
 let botao = document.querySelector("#botao");
