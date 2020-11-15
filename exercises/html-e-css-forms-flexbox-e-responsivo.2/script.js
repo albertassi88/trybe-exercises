@@ -51,6 +51,7 @@ inputEndereco.type = "text";
 inputEndereco.name = "endereco";
 labelEndereco.appendChild(inputEndereco);
 
+
 let labelCidade = document.createElement("label");
 labelCidade.innerHTML = "Cidade";
 let inputCidade = document.createElement("input");

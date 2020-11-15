@@ -4,57 +4,5 @@
     box-sizing: border-box;    
 }
 
-body{
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
-    margin: auto;    
-}
 
-h1{
-    padding: 20px;
-}
-
-#field {
-    padding: 30px;
-    width: 20%;
-    margin: 0 auto 40px auto;
-    margin-bottom: 20px;
-    display: inline-block;
-    background-color: ivory;
-}
-
-label {
-    display: inline-block;  
-    padding: 5px 15px;
-    width: 200px;
-    margin-bottom: 10px;
-}
-
-#select {
-    display: inline-block;  
-    padding: 4px 15px;
-    width: 70px;
-    margin-bottom: 10px;
-}
-
-.textArea {  
-    margin-bottom: 10px;    
-}
-
-#fieldRadio {    
-    background-color: lightgoldenrodyellow;
-    display: block;
-}
-
-.erro {    
-    border-color: red;    
-}
-
-#fieldTextArea {
-    background-color: ivory;
-    padding: 10px;
-    width: 5px;
-    display: inline-block;
-}
 
