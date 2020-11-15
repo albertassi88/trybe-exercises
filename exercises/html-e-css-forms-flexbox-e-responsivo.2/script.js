@@ -25,6 +25,7 @@ labelNome.innerHTML = "Nome";
 let inputNome = document.createElement("input");
 inputNome.maxLength = "40";
 inputNome.required;
+inputNome.className = "form-control";
 inputNome.type = "text";
 inputNome.name = "nome";
 labelNome.appendChild(inputNome);
@@ -36,6 +37,7 @@ inputEmail.maxLength = "50";
 inputEmail.required;
 inputEmail.type = "text";
 inputEmail.name = "email";
+inputEmail.className = "form-control";
 labelEmail.appendChild(inputEmail);
 
 let labelCpf = document.createElement("label");
@@ -45,6 +47,7 @@ inputCpf.maxLength = "11";
 inputCpf.required;
 inputCpf.type = "text";
 inputCpf.name = "cpf";
+inputCpf.className = "form-control";
 labelCpf.appendChild(inputCpf);
 
 let labelEndereco = document.createElement("label");
@@ -54,6 +57,7 @@ inputEndereco.maxLength = "200";
 inputEndereco.required;
 inputEndereco.type = "text";
 inputEndereco.name = "endereco";
+inputEndereco.className = "form-control"
 labelEndereco.appendChild(inputEndereco);
 
 
@@ -64,6 +68,7 @@ inputCidade.maxLength = "28";
 inputCidade.required;
 inputCidade.type = "text";
 inputCidade.name = "cidade";
+inputCidade.className = "form-control";
 labelCidade.appendChild(inputCidade);
 
 let comboBox = document.createElement("select");
@@ -82,11 +87,11 @@ fieldRadio.id = "fieldRadio";
 let legendRadio = document.createElement("legend");
 legendRadio.innerText = "Moradia";
 fieldRadio.appendChild(legendRadio);
+let divRadio = document.createElement("div");
 
 let inputRadioCasa = document.createElement("input");
 inputRadioCasa.id = "casa"
 inputRadioCasa.value = "casa";
-inputRadioCasa.className = "radio";
 inputRadioCasa.type = "radio";
 inputRadioCasa.name = "casa";
 let labelRadioCasa = document.createElement("label");
@@ -96,11 +101,12 @@ labelRadioCasa.appendChild(inputRadioCasa);
 let inputRadioApt = document.createElement("input");
 inputRadioApt.id = "apt"
 inputRadioApt.value = "apt";
-inputRadioApt.className = "radio";
+inputRadioApt.className = "form-check-input";
 inputRadioApt.type = "radio";
 inputRadioApt.name = "apt";
 let labelRadioApt = document.createElement("label");
 labelRadioApt.innerHTML = "Apartamento";
+labelRadioApt.className = "form-check-label";
 labelRadioApt.appendChild(inputRadioApt);
 
 fieldRadio.appendChild(labelRadioCasa);
@@ -116,6 +122,7 @@ fieldset.appendChild(comboBox);
 fieldset.appendChild(fieldRadio);
 form.appendChild(fieldset);
 divCadastro.appendChild(fieldset);
+divRadio.appendChild(fieldRadio);
 
 let botao = document.querySelector("#botao");
 let fieldTextArea = document.querySelector("#fieldTextArea");
@@ -124,7 +131,11 @@ form.appendChild(fieldTextArea);
 function data(){  
     botao.addEventListener("click", function(event){       
 
-        event.preventDefault();
+       event.preventDefault();
+       
+
+        
+        /*
         let data = document.querySelector("#data").value;
         let arrayData = data.split("/");
         let dia = arrayData[0];
@@ -134,7 +145,7 @@ function data(){
         if (!(dia > 0 && dia <=31 && mes > 0 && mes <=12 && ano > 0)){
             alert("Erro! Data inválida");
         }
-
+        
         let inputs = document.querySelectorAll("input[type=text], textarea");        
         let resultado = "";
         for (let index=0; index<inputs.length; index++){
@@ -152,10 +163,10 @@ function data(){
             alert(resultado);            
         }else {            
             form.reset();
-        }        
+        }    
+        */    
     });      
 } 
 data();
 
-
-
+var picker = new Pikaday({ field: document.getElementById('datepicker') });

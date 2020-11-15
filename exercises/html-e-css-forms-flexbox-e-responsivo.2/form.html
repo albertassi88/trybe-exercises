@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="pikaday.css">   
 </head>
 <body>
     <form action="" method="GET"> 
-        <h1>Formulário</h1>
-        <div class="cadastro"></div>
-        <div class="textArea">
-            <fieldset id="fieldTextArea">
-                <legend>Resumo do currículo</legend>
-                <textarea name="resumo" id="curriculo" cols="45" rows="10" maxlength="1000" required></textarea>
-                <p>Cargo</p>
-                <input name="cargo" id="cargo" type="text" cols="45" rows="1.5" maxlength="40" required>
-                <p>Descrição do Cargo</p>
-                <textarea name="desCargo" id="desCargo" cols="45" rows="1.5" maxlength="500" required></textarea>
-                <p>Data de início</p>
-                <input name="data" type="text" id="data" minlength="10" maxlength="10" required>
-                <button type="submit" class="btn btn-success" id="botao">Enviar</button>
-            </fieldset>
-        </div>       
+        <h1 class="display-4">Formulário</h1>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <fieldset id="fieldTextArea" class="form-group">
+                    <legend >Resumo do currículo</legend>
+                    <textarea name="resumo" id="curriculo" cols="45" rows="10" maxlength="1000" required></textarea>
+                    <p class="col-sm-2 col-form-label">Cargo</p>
+                    <input name="cargo" class="form-control" id="cargo" type="text" cols="45" rows="1.5" maxlength="40" required>
+                    <p class="col-sm-2 col-form-label">Descrição do Cargo</p>
+                    <textarea name="desCargo" id="desCargo" cols="45" rows="1.5" maxlength="500" required></textarea>
+                    <p class="col-sm-2 col-form-label">Data de início</p>
+                    <input name="data" class="form-control" type="text" id="datepicker" minlength="10" maxlength="10" required>
+                    <button type="submit" class="btn btn-success" id="botao">Enviar</button>
+                </fieldset>
+            </div> 
+        </div>      
     </form>
+<script src="pikaday.js"></script>
 <script src="script.js"></script>    
 </body>
 </html>
