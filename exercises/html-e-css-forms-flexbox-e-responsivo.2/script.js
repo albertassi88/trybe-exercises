@@ -128,7 +128,7 @@ let botao = document.querySelector("#botao");
 let fieldTextArea = document.querySelector("#fieldTextArea");
 form.appendChild(fieldTextArea);
 
-function data(){  
+function botaoEnviar(){  
     botao.addEventListener("click", function(event){       
 
        event.preventDefault();
@@ -167,8 +167,11 @@ function data(){
         */    
     });      
 } 
-data();
+botaoEnviar();
 
-var picker = new Pikaday({ 
-    field: document.getElementById('datepicker') 
-});
+function dataPikaday(){
+    let picker = new Pikaday({ 
+        field: document.getElementById('datepicker') 
+    });
+}
+dataPikaday();
