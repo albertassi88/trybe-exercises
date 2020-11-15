@@ -1,3 +1,6 @@
+![1](https://user-images.githubusercontent.com/63211449/99159571-3207a100-26bc-11eb-8f3a-02077d3dae6a.png)
+![2](https://user-images.githubusercontent.com/63211449/99159573-3469fb00-26bc-11eb-8afd-effd16d585ab.png)
+
 ## Trybe - Exercícios
 
 ### Contém todas as atividades desenvolvidas por mim durante minha tragetória na Trybe. 
