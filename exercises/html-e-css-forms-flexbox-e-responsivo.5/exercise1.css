@@ -1,0 +1,48 @@
+body {
+    font-size: 20px;
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 30px;
+}
+
+img {
+    max-width: 100%;
+    padding: 5px;    
+}
+
+figure {
+    margin: 10px;    
+}
+
+@media screen and (min-width: 1050px){
+    body {
+        background-color: burlywood;
+        font-size: 25px;
+        margin: 30px;
+    }
+
+    h1 h2 {
+        font-size: 40px;
+    }
+
+    #figuras {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+} 
+
+@media screen and (min-width: 1300px){
+
+    body{
+        background-color: cornflowerblue;
+        font-size: 30px;
+        margin: 45px;
+        
+    }
+
+}

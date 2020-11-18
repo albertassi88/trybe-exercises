@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+@media screen and (min-width: 375px){
+    body {
+        background-color: cornsilk;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style-type: none;
+        text-indent: 5px;
+    }
+
+    .aside-one ul {
+        list-style-type: none;
+    }
+
+    .aside-two ul {
+        list-style-type: none;
+    }   
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: cyan;
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: darkgrey;
+        font-size: 25px;
+        margin: 25px;
+    }
+}
+
+
+
+  
