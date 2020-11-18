@@ -6,8 +6,7 @@ html {
   }
 
 
-  @media screen and (min-width: 375px){
-
+@media screen and (min-width: 375px){
     body {
         background-color: cornsilk;
         font-size: 15px;
@@ -15,7 +14,7 @@ html {
         margin: 10px;
     }
 
-    #menu ul{
+    #menu ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -23,12 +22,22 @@ html {
         text-indent: 5px;
     }
 
-    .aside-one ul{
+    .aside-one ul {
         list-style-type: none;
     }
 
     .aside-two ul {
         list-style-type: none;
     }   
+}
 
-  }
+@media screen and (min-width: 600px) {
+    body {
+        background-color: cyan;
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+
+
+  
