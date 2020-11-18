@@ -34,5 +34,15 @@ figure {
         flex-direction: row;
         flex-wrap: wrap;
     }
+} 
+
+@media screen and (min-width: 1300px){
+
+    body{
+        background-color: cornflowerblue;
+        font-size: 30px;
+        margin: 45px;
+        
+    }
 
 }
