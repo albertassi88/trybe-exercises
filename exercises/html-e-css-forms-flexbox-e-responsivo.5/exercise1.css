@@ -11,9 +11,28 @@ h2 {
 
 img {
     max-width: 100%;
-    padding: 5px;
+    padding: 5px;    
 }
 
 figure {
-    margin: 10px;
+    margin: 10px;    
+}
+
+@media screen and (min-width: 1050px){
+    body {
+        background-color: burlywood;
+        font-size: 25px;
+        margin: 30px;
+    }
+
+    h1 h2 {
+        font-size: 40px;
+    }
+
+    #figuras {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 }
