@@ -39,5 +39,14 @@ html {
     }
 }
 
+@media screen and (min-width: 900px) {
+    body {
+        background-color: darkgrey;
+        font-size: 25px;
+        margin: 25px;
+    }
+}
+
+
 
   
