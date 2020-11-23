@@ -24,7 +24,28 @@ Bônus (opcional): tente fazer o mesmo exercício utilizando o métodoarray.sort
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-const numbers = (a, b) => {
+const numbersArray = (a, b) => {
     return a - b;
 }
-console.log(`"Os números ${oddsAndEvens.sort(numbers)} se encontram ordenados de forma crescente!.`);
+console.log(`"Os números ${oddsAndEvens.sort(numbersArray)} se encontram ordenados de forma crescente!.`);
+
+
+/* Parte 2
+1 - Abaixo, você verá algumas especificações de algoritmos para desenvolver. É fundamental que 
+você utilize o que aprendeu sobre let, const, arrow functions e template literals.
+Crie uma função que receba um número e retorne seu fatorial.
+Na matemática, o fatorial de um número não negativo N, com a notação N!, é o produto de todos 
+os inteiros menores ou iguais a N. Exemplo: 4! = 4 3 2 * 1 = 24.
+Bônus (opcional): tente fazer o mesmo exercício de forma recursiva. Spoiler: É possível resolver
+com uma linha.*/
+
+
+const numbersFactorial = (numbers) => {
+    if (numbers == 0 || numbers == 1) {
+        return 1;
+    } else {
+        return numbers * numbersFactorial(numbers - 1);
+    }   
+}
+
+console.log(numbersFactorial(5));
