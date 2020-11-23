@@ -47,5 +47,16 @@ const numbersFactorial = (numbers) => {
         return numbers * numbersFactorial(numbers - 1);
     }   
 }
-
 console.log(numbersFactorial(5));
+
+
+/*Crie uma função que receba uma frase e retorne qual a maior palavra.*/
+
+const longestWord = (frase) => {
+    const array = frase.split(" ");
+    const resultado = array.sort((a, b) => {
+        return b.length - a.length;
+    });
+    return resultado[0];
+}
+console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
