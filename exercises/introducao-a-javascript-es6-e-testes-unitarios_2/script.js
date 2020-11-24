@@ -126,3 +126,11 @@ const totalEstudantes = (objeto) => {
     return soma;
 }
 console.log(totalEstudantes(allLessons));
+
+
+/*7 - Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.*/
+
+const valueKey = (objeto, posicao) => Object.values(objeto)[posicao];
+console.log(valueKey(lesson1, 0));
+
+
