@@ -243,7 +243,7 @@ direito), os parâmetros que devem ser passados a ela e a resposta esperada. Esc
 entender e testar o comportamento da função e, depois, altere-a para que passe nos testes. Use os casos 
 de teste acima como inspiração, se tiver dúvidas!*/
 
-/*Use a variável parameter como parâmetro da função abaixo, escreva testes para verificar se a mesma está 
+/*Parte 1 - Use a variável parameter como parâmetro da função abaixo, escreva testes para verificar se a mesma está 
 retornando como se vê na variável result e, caso não esteja, altere o código para que ele passe nos 
 testes.*/
 
