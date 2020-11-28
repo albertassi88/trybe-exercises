@@ -139,6 +139,7 @@ Dados os casos de testes abaixo, escreva as funções de forma a passar nos test
 nunca alterar os testes ou as variáveis já escritas no código :
 Escreva a função addOne para passar nos testes já implementados.*/
 
+//Parte 1
 const assert = require('assert');
 // escreva a função addOne aqui
 
@@ -158,3 +159,25 @@ const output = addOne(myArray);
 assert.strictEqual(typeof addOne, 'function');
 assert.deepStrictEqual(output, expected);
 assert.deepStrictEqual(myArray, unchanged);
+
+
+//Parte 2
+//Escreva a função wordLengths para passar nos testes já implementados.
+
+const assert = require('assert');
+// escreva a função wordLengths aqui
+
+const wordLengths = (words) => {
+  const tamanho = [];
+  for (let index=0; index<words.length; index++){
+    tamanho.push(words[index].length);
+  }
+  return tamanho;
+};
+
+const words = ['sun', 'potato', 'roundabout', 'pizza'];
+const expected = [3, 6, 10, 5];
+
+assert.strictEqual(typeof wordLengths, 'function');
+const output = wordLengths(words);
+assert.deepStrictEqual(output, expected);
