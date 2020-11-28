@@ -248,6 +248,7 @@ retornando como se vê na variável result e, caso não esteja, altere o código
 testes.*/
 
 const assert = require('assert');
+const { resolveCname } = require('dns');
 
 const greetPeople = (people) => {
   let greeting = [];
@@ -265,3 +266,35 @@ assert.strictEqual(typeof greetPeople, 'function');
 assert.deepStrictEqual(greetPeople(parameter), result);
 
 
+/*Parte 2 - Use a variável parameter como parâmetro da função abaixo, escreva testes para verificar se 
+a mesma está retornando como se vê na variável result e, caso não esteja, altere o código para que ele 
+passe nos testes.*/
+
+const assert = require('assert');
+
+const removeVowels = (word) => {
+  const characters = word.split('');
+  let results = "";
+  let cont = 1;
+  for (let i = 0; i < word.length; i += 1) {    
+    if (
+      characters[i] === 'a' ||
+      characters[i] === 'o' ||
+      characters[i] === 'i' ||
+      characters[i] === 'e' ||
+      characters[i] === 'u'
+    ) {           
+      results += cont;
+      cont ++;
+    } else {
+      results += word[i];
+    }   
+  }  
+  return results;
+};
+
+const parameter = 'Dayane';
+const result = 'D1y2n3';
+
+assert.strictEqual(typeof removeVowels, 'function');
+assert.deepStrictEqual(removeVowels(parameter), result);
