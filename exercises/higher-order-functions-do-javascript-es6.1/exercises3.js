@@ -1,5 +1,4 @@
-/*2 - Retorne o nome do livro de menor nome.
-Dica: use a função forEach .*/
+/*3 - Encontre o primeiro livro cujo nome possui 26 caracteres.*/
 
 const assert = require('assert');
 
@@ -66,15 +65,17 @@ const books = [
   },
 ];
 
-const smallerName = () => {
-    let nameBook = "";    
-    books.forEach((nameSmall) => {
-        if (nameSmall.name.length < nameBook.length || nameBook.length === 0){
-            nameBook = nameSmall.name;
-        }
-    });
-    return nameBook;
+const expected_result = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin'
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991
 };
 
-assert.strictEqual(smallerName(), 'Duna');
+const getNamedBook = () => {return books.find( book => book.name.length === 26)};
+assert.deepStrictEqual(getNamedBook(), expected_result);
 
