@@ -77,10 +77,10 @@ const expectedResult = {
 
 const longestNamedBook = () => {
     return books.reduce((big, book) => {
-    if (book.name.length > big.length){
-        return book;
-    }
+    if (big.name.length > book.name.length){
         return big;
+    }
+        return book;
     });
 };
 
