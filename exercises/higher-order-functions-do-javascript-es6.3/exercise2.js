@@ -67,10 +67,7 @@ const books = [
 ];
 
 
-const reduceNames = (acc, book, index, array) => {
-    if (index === array.length - 1) return `${acc} ${book.author.name}.`;
-    return `${acc} ${book.author.name},`;
-};
+const reduceNames = (acc, book, index, array) => (index === array.length - 1) ? `${acc} ${book.author.name}.` : `${acc} ${book.author.name},`;
   
 function allNames() {
     return books.reduce(reduceNames,'Nomes:')
