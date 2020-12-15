@@ -1,4 +1,4 @@
-/*6 - Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.*/
+/*7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.*/
 
 const assert = require('assert');
 
@@ -65,10 +65,10 @@ const books = [
   },
 ];
 
-const expectedResult = true
+const expectedResult = false;
 
-function someBookWasReleaseOnThe80s() {
-  return books.some(element => element.releaseYear > 1980 && element.releaseYear <= 1989);
+function authorUnique() {  
+  return books.every(a => !books.some(b => b.author.birthYear === a.author.birthYear));
 }
 
-assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
+assert.strictEqual(authorUnique(), expectedResult);
