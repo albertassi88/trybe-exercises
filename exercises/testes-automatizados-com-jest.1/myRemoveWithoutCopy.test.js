@@ -9,7 +9,7 @@ const myRemoveWithoutCopy = require('./myRemoveWithoutCopy');
 
 describe('myRemoveWithoutCopy', () => {
   test('returns the same array without the item if the item belongs to it', () => {
-    expect(myRemoveWithoutCopy([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
+    expect(myRemoveWithoutCopy([1, 2, 3, 4], 3)).toEqual(undefined);
   });
 
   test('returns the correct array', () => {
@@ -23,6 +23,6 @@ describe('myRemoveWithoutCopy', () => {
   });
 
   test('returns an identical array if the item does not belong to it', () => {
-    expect(myRemoveWithoutCopy([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
+    expect(myRemoveWithoutCopy([1, 2, 3, 4], 5)).toEqual(undefined);
   });
 });
