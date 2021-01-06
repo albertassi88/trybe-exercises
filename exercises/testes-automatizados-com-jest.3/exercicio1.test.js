@@ -5,10 +5,26 @@ function randomNumber () {
   return Math.floor(Math.random() * 11);
 } 
 
-test('Testando se a função foi chamada.', () => {
+test('Teste do exercicio 1.', () => {
   randomNumber = jest.fn().mockReturnValue(10);
-  console.log(randomNumber)
   expect(randomNumber()).toBe(10);
   expect(randomNumber).toHaveBeenCalled();
   expect(randomNumber).toBeCalledTimes(1);
+});
+
+
+/*2 - Com a mesma função do exercício anterior, utilizando o mock, crie uma nova implementação, que deve receber dois parâmetros e retornar a divisão do primeiro pelo 
+segundo. Essa implementação deve ocorrer uma única vez. Faça os testes necessários.*/
+
+
+function randomNumber () {
+  return Math.floor(Math.random() * 11);
+} 
+
+test('Teste do exercicio 2.', () => {
+  randomNumber = jest.fn().mockImplementation((a, b) => a / b);
+  expect(randomNumber(40, 4)).toBe(10);
+  expect(randomNumber).toHaveBeenCalled();
+  expect(randomNumber).toBeCalledTimes(1);
+  expect(randomNumber).toHaveBeenCalledWith(40, 4);  
 });
