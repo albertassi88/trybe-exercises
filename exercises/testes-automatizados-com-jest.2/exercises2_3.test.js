@@ -29,11 +29,9 @@ const getUserName = (userID) => {
 //test promisses
 describe('getUserName - promise', () => {
     describe('when the user id exists', () => {
-        it('returns the user name', () => {
-            expect.assertions(1);
-            return getUserName(4).then(result => {
-                expect(result).toEqual('Mark');
-            });
+        it('returns the user name', () => {         
+            return getUserName(4)
+            .then(result => expect(result).toBe('Mark'));
         });
     
         describe('when the user id does not exists', () => {
@@ -54,16 +52,14 @@ Dica: Utilize o try/catch para o caso de erro.*/
 
 describe('getUserName - async/await', () => {
     describe('when the user id exists', () => {
-        it('returns the user name', async () => {
-            expect.assertions(1);
+        it('returns the user name', async () => {         
             const listName = await getUserName(4);
             expect(listName).toEqual('Mark');        
         });
     });
 
     describe('when the user id does not exists', () => {
-      it('returns an error', async () => {
-        expect.assertions(1);
+      it('returns an error', async () => {  
         try {
           await getUserName(1);
         } catch (error) {
